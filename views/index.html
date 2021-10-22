@@ -9,6 +9,7 @@
     <script defer src="/js/main.js"></script>
     <script src="js/gsap-public/minified/gsap.min.js"></script>
     <script defer src="/js/animation.js"></script>
+    <script defer src="/js/music player.js"></script>
 
 </head>
 <body>
@@ -53,25 +54,25 @@
         <section class="mini_player play">
             <div class="music-info">           
         
-                <audio src="/music/ukulele.mp3" id="audio"></audio>
+                <!-- <audio src="../music/ukulele.mp3" id="audio"></audio> -->
         
                 <div class="img-container">
-                    <img src="img/logo.png" alt="music-cover" id="cover" />
+                    <img src="img/logo.png" alt="music-cover" id="cover1"/>
                 </div>
                 <h4 id="title">ukelele</h4>
                 <div class="navigation">
-                    <button id="prev" class="action-btn">
+                    <button id="prev1" class="action-btn">
                         <img src="/img/next-1.png" alt="" class="mini_icons">
                     </button>
-                    <button id="play" class=" action-btn-big">
+                    <button id="play1" class=" action-btn-big">
                     <img src="/img/play-button.png" alt="" class="mini_play">
                         </button>
-                    <button id="next" class="action-btn">
+                    <button id="next1" class="action-btn">
                         <img src="/img/next-1.png" alt="" class="mini_icons">
                     </button>
                 </div>
-                <div class="progress-container" id="progress-container">
-                    <div class="progress" id="progress"></div>
+                <div class="progress-container" id="progress-container1">
+                    <div class="progress" id="progress1"></div>
                 </div>
             </div>
         </section>
@@ -147,12 +148,12 @@
                 </div>
                 <div class="mix_player_content">
                     <div class="player">
-                        <div class="img">
-                            <img src="/img/online-3217733__340.webp" alt="">
+                        <div class="img" >
+                            <img src="/img/online-3217733__340.webp" alt="" id="cover">
                         </div>
 
                         <div class="mix_details">
-                            <p class="mix_details_title">chance the rapper</p>
+                            <p class="mix_details_title" id="title">chance the rapper</p>
                             <p class="mix_details_by">dj blue</p>
                         </div>
 
@@ -161,6 +162,9 @@
                             <div class="mix_progress" id="progress"></div>
                             <p class="end">30:25</p>
                         </div>
+
+                        <audio src="../music/ukulele.mp3" id="audio" type="audio/mp3"></audio>
+                        
 
                     </div>
                     <div class="mix_list1">
@@ -217,9 +221,9 @@
                     </div>
                     <div class="mix_navigation">
                         <img src="/img/couple-of-arrows-changing-places.png" alt="" class="mix_icons">
-                        <img src="/img/forward-button.png" alt="" class="mix_icons">
-                        <img src="img/play-button.png" alt="" class="play_btn">
-                        <img src="/img/forward-button.png" alt="" class="mix_icons">
+                        <img src="/img/forward-button.png" alt="" class="mix_icons" id="next">
+                        <img src="img/play-button.png" alt="" class="play_btn" id="play">
+                        <img src="/img/forward-button.png" alt="" class="mix_icons" id="prev">
                         <img src="img/list-with-dots.png" alt="" class="mix_icons" id="mix_list">
                     </div>
                 </div>

@@ -219,7 +219,7 @@
     /* margin-left: 250px; */
 }
 
-#cover {
+#cover1 {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -228,7 +228,7 @@
 }
 
   
-.mini_player.play #cover {
+.mini_player.play #cover1 {
     animation-play-state: running;
 }
   
