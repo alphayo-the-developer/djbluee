@@ -8,6 +8,28 @@
     position: relative;
 }
 
+/* loading animation */
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001492;
+    z-index: 5000;
+
+}
+
+.loading img{
+    width: 100%;
+    height: 90%;
+
+}
+
+
+/* end loading animation */
+
 /* start showcase */
 
 .showcase {
