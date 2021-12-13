@@ -6,16 +6,19 @@ const nextBtn = document.getElementById('next');
 const audio = document.getElementById('audio');
 const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
-const title = document.getElementById('title');
+const title = document.getElementById('by');
+const title2 = document.getElementById('title');
 const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
+const songsBtn = document.querySelectorAll('.single_mix')
 
 // Song titles
-const songs = ['hey', 'summer', 'ukulele'];
+const songs = ['gengetone1', 'reggae', 'naija', 'bongo', 'mugithi'];
+
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -23,26 +26,22 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
   title.innerText = song;
-//   audio.src = `../music/${song}.mp3`;
-  audio.src = `http://127.0.0.1:3000/audo`;
+  title2.innerText = song;
+  audio.src = `/audio/${song}`;
   cover.src = `../img/${song}.jpg`;
 }
-
 // Play song
 function playSong() {
   musicContainer.classList.add('play');
-//   playBtn.querySelector('i.fas').classList.remove('fa-play');
-//   playBtn.querySelector('i.fas').classList.add('fa-pause');
-	console.log(audio)	
-  audio.play();
+ 	audio.play();
+	playBtn.src = "img/pause.png"
 }
+
 
 // Pause song
 function pauseSong() {
   musicContainer.classList.remove('play');
-//   playBtn.querySelector('i.fas').classList.add('fa-play');
-//   playBtn.querySelector('i.fas').classList.remove('fa-pause');
-
+  playBtn.src = "img/play-button.png";
   audio.pause();
 }
 
@@ -84,8 +83,7 @@ function setProgress(e) {
   const width = this.clientWidth;
   const clickX = e.offsetX;
   const duration = audio.duration;
-  console.log(duration)
-//   audio.currentTime = (clickX / width) * duration;
+  audio.currentTime = (clickX / width) * duration;
 }
 
 //get duration & currentTime for Time of song
@@ -177,3 +175,20 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 audio.addEventListener('timeupdate',DurTime);
+
+//color change
+const colorChange = () => {
+	songsBtn.forEach(el => {
+		el.style.backgroundColor = "#eeeded";
+	})
+}
+// song select
+songsBtn.forEach(element => {
+	element.addEventListener('click', (e) => {
+		colorChange()
+		songName = element.childNodes[5].innerText;
+		element.style.backgroundColor = "#afafaf";
+		loadSong(songName);
+		playSong();
+	
+})})

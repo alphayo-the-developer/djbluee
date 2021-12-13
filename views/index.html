@@ -9,7 +9,9 @@
     <script defer src="/js/main.js"></script>
     <script src="js/gsap-public/minified/gsap.min.js"></script>
     <script defer src="/js/animation.js"></script>
+    <script defer src="/js/gallery.js"></script>
     <script defer src="/js/music player.js"></script>
+    <script defer src="/js/mini_player.js"></script>
 
 </head>
 <body>
@@ -40,26 +42,26 @@
     
             </nav>
     
-            <video src="videos/bluee_video.mp4" muted loop autoplay ></video>
+            <video src="video" muted loop autoplay ></video>
             
             <div class="overlay"></div>
             <div class="text">
                 <h1 class="dj">dj</h1>
                 <h1 class="name">bluee</h1>
-                <p class="sale">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus atque ratione nihil maiores iusto possimus odio minus assumenda labore odit.</p>
+                <p class="sale">Turn up your party with the best dj in the 254.For events/parties</p>
                 <a href="/contact" class="contact_btn">contact me</a>
             
             </div>
         </section>
-        <section class="mini_player play">
+        <section class="mini_player " id="mini_player">
             <div class="music-info">           
         
-                <!-- <audio src="../music/ukulele.mp3" id="audio"></audio> -->
+                <audio src="/audio" id="audio1"></audio>
         
                 <div class="img-container">
-                    <img src="img/logo.png" alt="music-cover" id="cover1"/>
+                    <img src="img/GENGETONE1.jpg" alt="music-cover" id="cover1"/>
                 </div>
-                <h4 id="title">ukelele</h4>
+                <h4 id="title1">gengetone1</h4>
                 <div class="navigation">
                     <button id="prev1" class="action-btn">
                         <img src="/img/next-1.png" alt="" class="mini_icons">
@@ -85,7 +87,7 @@
             <div class="mix_list">
                 <div class="mix_list_header">
                     <p class="option">most popular</p>
-                    <p class="by">dj bluee</p>
+                    <p class="by" >dj bluee</p>
                     <img src="/img/list-with-dots.png" alt="" class="playlist_icon">
                     <div class="mix_options">
                         <p>most popular</p>
@@ -96,45 +98,45 @@
                 <div class="mix_list_content">
                     <div class="single_mix">
                         <p class="mix_id">01</p>
-                        <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                        <p class="mix_title">genge mix</p>
-                        <p class="mix_dec">Lorem, ipsum dolor</p>
+                        <img src="/img/GENGETONE1.jpg" alt="" class="mix_thumbnail">
+                        <p class="mix_title">gengetone1</p>
+                        <p class="mix_dec">gengetone vol2</p>
                         <p class="mix_time">33:20</p>
                         <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                     </div>
                     
                     <div class="single_mix">
-                        <p class="mix_id">01</p>
-                        <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                        <p class="mix_title">genge mix</p>
-                        <p class="mix_dec">Lorem, ipsum dolor</p>
+                        <p class="mix_id">02</p>
+                        <img src="/img/reggae.jpg" alt="" class="mix_thumbnail">
+                        <p class="mix_title">reggae</p>
+                        <p class="mix_dec">reggae road</p>
                         <p class="mix_time">33:20</p>
                         <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                     </div>
 
                     <div class="single_mix">
-                        <p class="mix_id">01</p>
-                        <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                        <p class="mix_title">genge mix</p>
-                        <p class="mix_dec">Lorem, ipsum dolor</p>
+                        <p class="mix_id">03</p>
+                        <img src="/img/naija.jpg" alt="" class="mix_thumbnail">
+                        <p class="mix_title">naija</p>
+                        <p class="mix_dec">naija 2021</p>
                         <p class="mix_time">33:20</p>
                         <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                     </div>
 
                     <div class="single_mix">
-                        <p class="mix_id">01</p>
-                        <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                        <p class="mix_title">genge mix</p>
-                        <p class="mix_dec">Lorem, ipsum dolor</p>
+                        <p class="mix_id">04</p>
+                        <img src="/img/bongo.jpg" alt="" class="mix_thumbnail">
+                        <p class="mix_title">bongo</p>
+                        <p class="mix_dec">bongo 2021</p>
                         <p class="mix_time">33:20</p>
                         <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                     </div>
 
                     <div class="single_mix">
-                        <p class="mix_id">01</p>
-                        <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                        <p class="mix_title">genge mix</p>
-                        <p class="mix_dec">Lorem, ipsum dolor</p>
+                        <p class="mix_id">05</p>
+                        <img src="/img/mugithi.jpg" alt="" class="mix_thumbnail">
+                        <p class="mix_title">mugithi</p>
+                        <p class="mix_dec">mugithi 2021</p>
                         <p class="mix_time">33:20</p>
                         <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                     </div>
@@ -144,26 +146,26 @@
             <div class="mix_player">
                 <div class="mix_player_header">
                     <p class="option">now playing</p>
-                    <p class="by"><span id="">01</span> gengetone mix</p>
+                    <p class="by" id="by"><span id="">01</span> gengetone mix</p>
                 </div>
                 <div class="mix_player_content">
                     <div class="player">
                         <div class="img" >
-                            <img src="/img/online-3217733__340.webp" alt="" id="cover">
+                            <img src="/img/GENGETONE1.jpg" alt="" id="cover">
                         </div>
 
                         <div class="mix_details">
-                            <p class="mix_details_title" id="title">chance the rapper</p>
-                            <p class="mix_details_by">dj blue</p>
+                            <p class="mix_details_title" id="title">gengetone</p>
+                            <p class="mix_details_by">gengetone 2021</p>
                         </div>
 
                         <div class="mix_progress-container" id="progress-container">
-                            <p class="start">00.00</p>
+                            <p class="start" id="currTime">00.00</p>
                             <div class="mix_progress" id="progress"></div>
-                            <p class="end">30:25</p>
+                            <p class="end" id="durTime">30:25</p>
                         </div>
-
-                        <audio src="../music/ukulele.mp3" id="audio" type="audio/mp3"></audio>
+                        <!-- ../music/ukulele.mp3 -->
+                        <audio src="/audio" id="audio" type="audio/mp3"></audio>
                         
 
                     </div>
@@ -183,36 +185,36 @@
                             
                             <div class="single_mix">
                                 <p class="mix_id">01</p>
-                                <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                                <p class="mix_title">genge mix</p>
-                                <p class="mix_dec">Lorem, ipsum dolor</p>
+                                <img src="/img/gengetone.jpg" alt="" class="mix_thumbnail">
+                                <p class="mix_title">gengetone1</p>
+                                <p class="mix_dec">gengetone vol 2</p>
                                 <p class="mix_time">33:20</p>
                                 <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                             </div>
         
                             <div class="single_mix">
-                                <p class="mix_id">01</p>
-                                <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                                <p class="mix_title">genge mix</p>
-                                <p class="mix_dec">Lorem, ipsum dolor</p>
+                                <p class="mix_id">02</p>
+                                <img src="/img/reggae.jpg" alt="" class="mix_thumbnail">
+                                <p class="mix_title">reggae</p>
+                                <p class="mix_dec">reggae road block</p>
                                 <p class="mix_time">33:20</p>
                                 <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                             </div>
         
                             <div class="single_mix">
-                                <p class="mix_id">01</p>
-                                <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                                <p class="mix_title">genge mix</p>
-                                <p class="mix_dec">Lorem, ipsum dolor</p>
+                                <p class="mix_id">03</p>
+                                <img src="/img/naija.jpg" alt="" class="mix_thumbnail">
+                                <p class="mix_title">naija</p>
+                                <p class="mix_dec">naija 2021</p>
                                 <p class="mix_time">33:20</p>
                                 <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                             </div>
         
                             <div class="single_mix">
-                                <p class="mix_id">01</p>
-                                <img src="/img/online-3217733__340.webp" alt="" class="mix_thumbnail">
-                                <p class="mix_title">genge mix</p>
-                                <p class="mix_dec">Lorem, ipsum dolor</p>
+                                <p class="mix_id">04</p>
+                                <img src="/img/bongo.jpg" alt="" class="mix_thumbnail">
+                                <p class="mix_title">bongo</p>
+                                <p class="mix_dec">bongo 2021</p>
                                 <p class="mix_time">33:20</p>
                                 <img src="/img/heart-shape-outline.png" alt="" class="mix_like">
                             </div>
@@ -231,65 +233,69 @@
         </div>
     </section>
 
-    <section class="events">
+    <section class="events" id="events">
         <div class="events_heading headings">
             <h2>events</h2>
         </div>
 
         <div class="events_container">
-            <div class="event_img">
+            <div class="event_img" id="event_img">
                          
             </div>
             <div class="events_contents">
                 <hr class="events_lines">
                 <div class="event">
                     <div class="event_info">
-                        <p>koroka festival</p>
-                        <p>by safaricom</p>
+                        <p>mashuja party</p>
+                        <p>by ol-peject</p>
                     </div>
                     <div class="event_date">
-                        <p>23 jan</p>
+                        <p>20 oct</p>
                     </div>
+                    <img src="/img/e1.jpg" alt="">
                 </div>
 
                 <hr class="events_lines">
                 <div class="event">
                     <div class="event_info">
-                        <p>koroka festival</p>
-                        <p>by safaricom</p>
+                        <p>huduma eve</p>
+                        <p>by pardus lodge</p>
                     </div>
                     <div class="event_date">
                         <p>23 jan</p>
                     </div>
+                    <img src="/img/e5.jpg" alt="">
                 </div>
 
                 <hr class="events_lines">
                 <div class="event">
                     <div class="event_info">
-                        <p>koroka festival</p>
-                        <p>by safaricom</p>
+                        <p>stopover festival</p>
+                        <p>by ol-peject</p>
                     </div>
                     <div class="event_date">
-                        <p>23 jan</p>
+                        <p>28 aug</p>
                     </div>
+                    <img src="/img/e3.jpg" alt="">
                 </div>
 
                 <hr class="events_lines">
                 <div class="event">
                     <div class="event_info">
-                        <p>koroka festival</p>
-                        <p>by safaricom</p>
+                        <p>koroga festival</p>
+                        <p>by linx</p>
                     </div>
                     <div class="event_date">
-                        <p>23 jan</p>
+                        <p>23 aug</p>
                     </div>
+                    <img src="/img/e4.jpg" alt="">
                 </div>
                 <hr class="events_lines">
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="services_heading headings">
             <h2>services</h2>
         </div>
@@ -299,7 +305,7 @@
                 why hire me?
             </h3>
             <p class="hire_me_body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eaque, atque recusandae quasi temporibus soluta, a labore praesentium distinctio, vitae amet repudiandae? Blanditiis, quasi earum.
+                Dj Bluee is a great DJ, not only does he have an outgoing and energetic personality, but also can “read a crowd” and play the appropriate music to ensure your dance floor is packed all night long.
             </p>
         </div>
 
@@ -307,7 +313,7 @@
             <div class="service">
                 <img src="/img/heart-shape-silhouette.png" alt="" class="icons service_icon">
                 <div class="service_content">
-                    <h3 class="service_heading">Lorem ipsum dolor sit</h3>
+                    <h3 class="service_heading">Wedding Event</h3>
                     <p class="service_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vero quod quaerat at perferendis corrupti?
                     </p>
@@ -318,9 +324,9 @@
             <div class="service">
                 <img src="/img/heart-shape-silhouette.png" alt="" class="icons service_icon">
                 <div class="service_content">
-                    <h3 class="service_heading">Lorem ipsum dolor sit</h3>
+                    <h3 class="service_heading">Birthday Party</h3>
                     <p class="service_body">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vero quod quaerat at perferendis corrupti?
+                        Make your birthday bash memorable with good music, photography and live MCs.
                     </p>
                     <button class="service_cta" >contact me</button>
                 </div>
@@ -329,9 +335,9 @@
             <div class="service">
                 <img src="/img/heart-shape-silhouette.png" alt="" class="icons service_icon">
                 <div class="service_content">
-                    <h3 class="service_heading">Lorem ipsum dolor sit</h3>
+                    <h3 class="service_heading">Dj Acadamey</h3>
                     <p class="service_body">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vero quod quaerat at perferendis corrupti?
+                        Do you dream of becoming a dj? Come and learn from the best in the industry.
                     </p>
                     <button class="service_cta" >contact me</button>
                 </div>
@@ -340,13 +346,33 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery_heading headings">
             <h2>gallery</h2>
+            <a href="https://www.instagram.com/djbluee254/"><img src="img/ig.png" alt="" class="icons gallery_icon"></a>
         </div>
 
         <div class="gallery_containner">
-            
+            <div class="images_containner">
+                <div class="prev" id="gallery_prev">
+                    <p>prev</p>
+                </div>
+                <div class="images">
+                    <img data-name="porkies" src="img/1.jpg" alt=""  class="even">
+                    <img data-name="meet & grill" src="img/2.jpg" alt="" class="even1">
+                    <img data-name="mr&mrs nyaga wedding" src="img/3.jpg" alt="" class="odd">
+                    <img data-name="koroga" src="img/4.jpg" alt="" class="odd1" ff="ff">
+                    <img data-name="porkies" src="img/5.jpg" alt=""  class="even">
+                    <img data-name="meet & grill" src="img/6.jpg" alt="" class="even1">
+                    <img data-name="mr&mrs nyaga wedding" src="img/9.jpg" alt="" class="odd">
+                    <img data-name="mr&mrs nyaga wedding" src="img/8.jpg" alt="" class="odd">
+                    <img data-name="mr&mrs nyaga wedding" src="img/7.jpg" alt="" class="odd">
+                </div>
+                <div class="next" id="gallery_next">
+                    <p>next</p>
+                </div>
+            </div>
+            <h1 class="event_name" id="event_name">Koroga festival</h1>
         </div>
     </section>
 
@@ -357,30 +383,30 @@
         <div class="contact_container">
             <div class="contact_content">
                 <div class="contact_box">
-                    <img src="/src/img/align-justify.png" alt="" class="icons">
+                    <img src="/img/phone-call.png" alt="" class="icons">
                     <h3 class="contact_title">Phone</h3>
                     <span class="contact_description">999-888-777</span>               
                 </div>
 
                 <div class="contact_box">
-                    <img src="/src/img/align-justify.png" alt="" class="icons">
+                    <img src="/img/home.png" alt="" class="icons">
                     <h3 class="contact_title">Location</h3>
                     <span class="contact_description">#123 Lima -peru</span>               
                 </div>
 
                 <div class="contact_box">
-                    <img src="/src/img/align-justify.png" alt="" class="icons">
+                    <img src="/img/gmail.png" alt="" class="icons">
                     <h3 class="contact_title">Email</h3>
                     <span class="contact_description">clayuser@gmail.com</span>               
                 </div>
 
                 <div class="contact_box">
-                    <img src="/src/img/align-justify.png" alt="" class="icons">
+                    <img src="/img/chat.png" alt="" class="icons">
                     <h3 class="contact_title">Chat</h3>
                     <div>
-                        <a href="" class="contact_social"><img src="/src/img/align-justify.png" class="icons" alt=""></a>
-                        <a href="" class="contact_social"><img src="/src/img/align-justify.png" class="icons" alt=""></a>
-                        <a href="" class="contact_social"><img src="/src/img/align-justify.png" class="icons" alt=""></a>
+                        <a href="" class="contact_social"><img src="/img/twitter.png" class="icons" alt=""></a>
+                        <a href="" class="contact_social"><img src="/img/facebook.png" class="icons" alt=""></a>
+                        <a href="" class="contact_social"><img src="/img/icons8-instagram-40.png" class="icons" alt=""></a>
 
                     </div>               
                 </div>

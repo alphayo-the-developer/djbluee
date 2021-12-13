@@ -19,7 +19,7 @@ const navLink = document.querySelectorAll('.nav_link'),
  nav_menu = document.getElementById('nav_menu')
 
 function linkAction(){
-    nav_menu.style.display = 'none';
+    nav_menu.classList.remove('show');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -39,3 +39,17 @@ const showList = function () {
 
 showList();
 
+// events
+
+const eventInfo = document.querySelectorAll('.event');
+const eventImg = document.getElementById('event_img');
+
+eventInfo.forEach(el => {
+    el.addEventListener('click', function() {
+        imgUrl = el.children[2].src;
+        // console.log(imgUrl.split('/'))
+        eventImg.style.background = `url(${imgUrl}) no-repeat`;
+        eventImg.style.backgroundSize = `contain`;
+    })
+    
+})
