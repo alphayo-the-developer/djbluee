@@ -12,7 +12,7 @@ const cover1 = document.getElementById('cover1');
 // const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs1 = ['gengetone1', 'reggae', 'naija', 'bongo', 'mugithi'];
+const songs1 = ['reggae', 'naija', 'bongo', 'mugithi'];
 
 // Keep track of song
 let songIndex1 = 2;
