@@ -14,7 +14,7 @@ const durTime = document.querySelector('#durTime');
 const songsBtn = document.querySelectorAll('.single_mix')
 
 // Song titles
-const songs = ['gengetone1', 'reggae', 'naija', 'bongo', 'mugithi'];
+const songs = ['reggae', 'naija', 'bongo', 'mugithi'];
 
 
 // Keep track of song
